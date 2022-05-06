@@ -22,7 +22,7 @@ def mse_(x, y):
 
     
 # read the data
-data = nib.load(r"C:\Users\Utilisateur\OneDrive - ABYS MEDICAL\Bureau\DataAugmentation\data\ParoiPost.nii.gz").get_fdata()
+data = nib.load("Specify your path").get_fdata()
 
  # bright data
 data_bright = Data_aug.brightness(data)
@@ -35,6 +35,8 @@ data_rotated30 = Data_aug.rotation_zoom3D(data)
 data_vec_id = REshape.remote(data)
 data_rotated30_vec_id = REshape.remote(data_rotated30)
 data_bright_vec_id = REshape.remote(data_bright)
+
+
 mse_rotate30_id = mse_.remote(data_vec_id, data_rotated30_vec_id)
 mse_bright_id = mse_.remote(data_vec_id, data_bright_vec_id)
 

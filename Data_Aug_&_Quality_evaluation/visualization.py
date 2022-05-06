@@ -1,5 +1,4 @@
 import os
-# from itertools import cycle
 import numpy as np
 import vispy
 from vispy import app, scene
@@ -13,25 +12,7 @@ from data_aug import Data_aug
 # https://github.com/pranathivemuri/vispy-example-3d/blob/master/display_numpy_volume.py
 # create colormaps that work well for translucent and additive volume rendering
 
-# class TransFire(BaseColormap):
-#     glsl_map = """
-#     vec4 translucent_fire(float t) {
-#         return vec4(pow(t, 0.5), t, t*t, max(0, t*1.05 - 0.05));
-#     }
-#     """
-    
-# class TransGrays(BaseColormap):
-#     glsl_map = """
-#     vec4 translucent_grays(float t) {
-#         return vec4(t, t, t, t*0.05);
-#     }
-#     """
-    
-# # Setup colormap iterators
-# opaque_cmaps = cycle(get_colormaps())
-# translucent_cmaps = cycle([TransFire(), TransGrays()])
-# opaque_cmap = next(opaque_cmaps)
-# translucent_cmap = next(translucent_cmaps)
+
 
 class ArrayView3D(object):
 
@@ -99,7 +80,7 @@ class ArrayView3D(object):
 
 
 if __name__ == "__main__":
-    data = nib.load(r"C:\Users\Utilisateur\OneDrive - ABYS MEDICAL\Bureau\DataAugmentation\data\Test_Patient2.nii.gz").get_fdata() 
+    data = nib.load("Specify your path").get_fdata() 
     data_bright = Data_aug.brightness(data)
     data_rot30 = Data_aug.rotation_zoom3D(data)
     data_ = data

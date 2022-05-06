@@ -28,7 +28,7 @@ def distance_euclidean(x, y):
 
     
 # read the data
-data = nib.load(r"C:\Users\Utilisateur\OneDrive - ABYS MEDICAL\Bureau\DataAugmentation\data\ParoiPost.nii.gz").get_fdata()
+data = nib.load("Specify your path").get_fdata()
 
 
  # bright data
