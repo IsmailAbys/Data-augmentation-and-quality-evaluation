@@ -24,4 +24,4 @@ if __name__ == "__main__":
 
 ---
 # Qualitative analysis
-To qualitatively analyze the synthetic data, run the file `visualization.py`. press "b" for the broghtness, "r" for the 30° rotation and "o" for the original data.
+To qualitatively analyze the synthetic data, run the file `visualization.py`. press "b" for the brightness, "r" for the 30° rotation and "o" for the original data.
