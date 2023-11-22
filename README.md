@@ -1,6 +1,12 @@
 # Data-augmentation-and-quality-evaluation
 Data augmentation and quality evaluation of generated data
 
+To use this, it is recommended to clone the codebase directly:
+
+`git clone https://github.com/IsmailAbys/Data-augmentation-and-quality-evaluation.git`
+`cd Data-augmentation-and-quality-evaluation`
+
+
 # Installation
 Before executing the code, you must first install the libraries in the requirements file and make sure you have the correct versions installed.
 
