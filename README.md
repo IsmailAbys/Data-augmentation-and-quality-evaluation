@@ -30,5 +30,7 @@ For the transformation technique, you choose "brightness" for the brightness tec
 ---
 # Quantitative analysis
 `MSE.py`, `ssim.py` and `Distance_euclidean.py` are the metrics for evaluating the quality of the images generated. Run
-`Python file.py -img1 "path of the first input image" -img2 "path of the second input image`.
+```Python 
+python file.py -img1 "path of the first input image" -img2 "path of the second input image.
+```
 
